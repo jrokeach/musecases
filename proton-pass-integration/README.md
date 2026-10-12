@@ -26,5 +26,6 @@ Once the integration is live, these rules keep it safe and useful:
 - The Muse vault is the only place your assistant may create or read items. Never your other vaults.
 - Passwords are generated, never chosen or typed. Nobody reads them back, not even you, unless you're rotating one.
 - Every new account gets its own unique email alias.
-- Ask which email address(es) ("mailboxes") aliases should forward to. It may be just one, or several (for example, one of yours and one of mine). All mailboxes must be set up in Proton Pass _before_ you start creating aliases to forward to them.
+- Ask which email address(es) ("mailboxes") aliases should forward to. The user may choose one or several. Never assume a default or proceed on silence; get an explicit answer first. All mailboxes must be set up in Proton Pass _before_ creating aliases.
+- Always set `PROTON_PASS_AGENT_REASON` when creating, viewing, updating, or trashing items, and verify the session (`pass-cli info`) before running commands.
 - If the token expires or stops working, renew it. Don't work around it.
