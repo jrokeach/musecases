@@ -8,6 +8,6 @@ The pattern everything else rests on: every merchant gets its own email alias, a
 
 ## Use cases
 
-- [Credit card tracking](credit-card-tracking/) — cloud-tracked credit card reference (`credit_cards.md`, with time-limited benefits tracked inline per card), refreshed monthly, used to answer "which card should I use?" and "what benefits do I have left?"
+- [Credit card tracking](credit-card-tracking/) — cloud-tracked credit card reference (`credit_cards.md`, with time-limited benefits tracked inline per card), refreshed monthly. Answers "which card should I use?" and "what benefits do I have left?", and can **automatically pick the best card every time Muse makes a purchase for you** (opt-in during setup)
 - [Proton Pass integration](proton-pass-integration/) — scoped Proton Pass agent setup: a dedicated vault plus an agent token so your Muse can create logins, generate passwords, and spin up email aliases without ever seeing your other vaults
 - [Dual-delivery aliases](dual-delivery-aliases/) — one unique email alias per merchant, delivered to both your mailbox and your assistant's: the data-segmentation strategy that keeps merchants away from real addresses while letting your assistant work from order email
