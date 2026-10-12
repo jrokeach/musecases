@@ -21,6 +21,8 @@ Set up a Proton Pass integration so you can create logins, generate passwords, a
 - Then I will run:
   `pass-cli agent create Muse --expiration 1y --vault "Muse"`
   (Check `pass-cli agent --help` for the current expiration options and exact flags, since the CLI evolves.)
+- The new agent may only get Viewer access by default, which is not enough to create logins or aliases. Grant it Editor access:
+  `pass-cli agent access grant Muse --vault-name "Muse" --role editor`
 - I will hand you the FULL output of that command. It includes the token plus Proton's usage instructions for the agent. Read them and follow them (step 4), and treat the token as a secret: store it in secure storage, never in chat, notes, or memory files.
 - If the agent subcommand is unavailable in my installed version, fall back to a personal access token (`pass-cli login --pat`) and tell me the tradeoff: broader access, so prefer the agent token when available.
 
