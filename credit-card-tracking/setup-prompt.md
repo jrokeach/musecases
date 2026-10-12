@@ -41,3 +41,8 @@ Set up a credit card tracking system for me. Work through these steps in order, 
 - Whenever I ask which card to use for a purchase, first pull the latest `credit_cards.md` from the folder, then answer from it: name the card, the earn rate, and the one-line reason.
 - Whenever I ask what benefits I still have available (e.g. "do I have any travel credits left?"), check each card's benefit list in `credit_cards.md` and answer from the tracked statuses. If a benefit's status is unknown, say so and ask me.
 - If I report a new card, a closed card, or a used benefit, update the file.
+
+## 6. Automatic best-card selection for purchases
+- Ask me whether I want you to automatically choose the best card whenever you make a purchase on my behalf (e.g. paying through a saved wallet like Link). Get an explicit yes before turning this on; never assume it.
+- If I say yes: for each purchase you make, first pull the latest `credit_cards.md` from the folder, pick the card with the best earn for that purchase among the cards actually available to pay with, and use it. If the tracker's best card isn't available in the wallet, tell me and use the best one that is.
+- If I say no or don't answer, keep asking me which card to use each time you make a purchase.
